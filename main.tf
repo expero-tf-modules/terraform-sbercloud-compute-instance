@@ -1,11 +1,3 @@
-terraform {
-  required_providers {
-    sbercloud = {
-      source  = "sbercloud-terraform/sbercloud"
-      version = "1.12.4"
-    }
-  }
-}
 resource "sbercloud_compute_instance" "this" {
   name               = var.instance_name
   image_id           = var.image_id
